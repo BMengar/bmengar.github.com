@@ -1,0 +1,147 @@
+/* Colores
+#5DA896 - Verde
+#7AF5D6 - Aquamarina
+#F5B66E - Naranja
+#3B4EA8 - Azul Marino
+#627CF5 - Azul claro
+#D500F9 - rosa Links
+*/
+html{
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: #D500F9;
+}
+a:hover{
+  opacity: 0.7;
+}
+.paragraph{
+  line-height: 1.8em;
+  font-weight: 200;
+}
+.container{
+  background: #d9a7c7;
+  background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);
+  background: linear-gradient(to right, #fffcdc, #d9a7c7);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title{
+  text-transform: capitalize;
+  text-align: center;
+}
+.content{
+  max-width: 960px;
+  max-height:550px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  position: relative;
+}
+td{
+    display: block;
+    width: 100%;
+  }
+td:nth-of-type(1){
+    color: #C6426E;
+    font-size: 1.2em;
+  }
+th{
+    display:none;
+  }
+.actions{
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+.close{
+  height: 40px;
+  width:  40px;
+  border-radius: 50%;
+  color: white;
+  background-Color: #642b73;
+  display: inline-block;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fa-sharp, .fa-sharp-0{
+  color:#FFC400;
+}
+p{
+ color: black;
+}
+.table{
+  width: 100%;
+  border-spacing: 0;
+}
+.table td, .table th{
+  padding: 1em;
+  text-align: left;
+}
+.table tr:nth-child(even){
+  background-color: #F3e5f5;
+}
+.Title-item{
+  /*border-bottom-style: solid;
+  border-width: 2px;
+  border-color: #C6426E; Se simplifica como lo siguiente en shorthand properties:*/
+  font-size: 2em;
+  border-bottom: solid 2px #C6426E;
+  padding: 1em;
+}
+.position{
+  width: 4%;
+  background-color: #C6426E;
+  color: white;
+  padding: 0.5em;
+  border-radius: 4px;
+  margin-right: 0.5em;
+
+
+}
+.address{
+  font-weight: bold;
+  color: #642b73;
+  font-size: 1.2em;
+  margin-top: 1em;
+  display: inline-block;
+}
+.main-image{
+  float: left;
+  margin-right: 1em;
+  height: 300px;
+}
+image{
+  max-width: 100%
+}
+@media (min-width:900px){
+  th{
+      display: table-cell;
+  }
+  td{
+      display: table-cell;
+      width: auto;
+  }
+  td:nth-of-type(1){
+    font-size: 1em;
+
+  }
+  .content{
+    padding: 1.8em;
+  }
+}
+@media (min-height:550px) {
+  .content{
+    height: 500px;
+  }
+}
